@@ -4,6 +4,8 @@ end
 
 def summon_captain_planet(array)
   caps = []
+  i = 0 
+  while i < array.length
   caps << array.map {|calls| calls.capitalize}
   caps.each {|calls| puts "#{calls}!"}
 end
