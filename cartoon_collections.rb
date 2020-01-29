@@ -41,10 +41,10 @@ def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
   i = 0 
   array.each 
-  if array.include? {|i| i.length > 4}
-    return true 
+  if array.any? {|i| i.include? (cheese_types)}
+    return array[i]
   else
-    return false
+    return nil
   i += 1 
   end
 end
