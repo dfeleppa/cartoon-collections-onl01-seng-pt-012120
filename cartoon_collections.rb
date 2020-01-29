@@ -36,9 +36,11 @@ def find_the_cheese(array)
       return nil
     end
 end
-def fin
+
+def find_the_cheese(array)
+  cheese_types = ["cheddar", "gouda", "camembert"]
   i = 0 
-  if array.any? {|i| i.length > 4}
+  array.each if array.any? {|i| i.length > 4}
     return true 
   else
     return false
