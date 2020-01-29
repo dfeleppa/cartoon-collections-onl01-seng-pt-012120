@@ -30,7 +30,7 @@ end
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
   array.each {|cheese| 
-    if cheese_types.include?(cheese)} 
+    if array.include? (cheese_types)
 end
 
 sharks = ["Hammerhead", "Great White", "Tiger", "Whale"]
