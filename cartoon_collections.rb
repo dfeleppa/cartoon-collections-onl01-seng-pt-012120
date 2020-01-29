@@ -31,13 +31,7 @@ def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
   array.each {|cheese| 
     if array.include? (cheese_types)
-end
-
-sharks = ["Hammerhead", "Great White", "Tiger", "Whale"]
-result = nil
-sharks.each do |shark|
-  if sharks.include? "a"
-    result = shark
-    break
-  end
+      return cheese 
+    else
+      return nil
 end
