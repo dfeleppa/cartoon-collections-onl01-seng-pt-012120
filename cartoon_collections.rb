@@ -27,3 +27,11 @@ def find_the_cheese(array)
   array.find {|cheese| cheese_types.include?(cheese)} 
 end
 
+sharks = ["Hammerhead", "Great White", "Tiger", "Whale"]
+result = nil
+sharks.each do |shark|
+  if sharks.include? "a"
+    result = shark
+    break
+  end
+end
